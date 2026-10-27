@@ -3,7 +3,7 @@ chcp 65001 >nul
 title AI 游戏陪玩 - 杀戮尖塔
 cd /d "%~dp0"
 
-set "PY=C:\Users\dqy20\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe"
+set "PY=%USERPROFILE%\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe"
 if not exist "%PY%" set "PY=python"
 
 set PYTHONUTF8=1

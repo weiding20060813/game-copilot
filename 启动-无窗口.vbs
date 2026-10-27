@@ -8,7 +8,7 @@ Set fso = CreateObject("Scripting.FileSystemObject")
 Set shell = CreateObject("WScript.Shell")
 
 base = fso.GetParentFolderName(WScript.ScriptFullName)
-py = "C:\Users\dqy20\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\pythonw.exe"
+py = shell.ExpandEnvironmentStrings("%USERPROFILE%") & "\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\pythonw.exe"
 If Not fso.FileExists(py) Then py = "pythonw.exe"
 
 shell.CurrentDirectory = base

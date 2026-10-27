@@ -21,8 +21,8 @@ from PySide6.QtGui import QGuiApplication  # noqa: E402
 import main as main_mod  # noqa: E402
 from overlay import create_app  # noqa: E402
 
-GAME_EXE = r"C:\Users\dqy20\steam\steamapps\common\SlayTheSpire\SlayTheSpire.exe"
-SHOT = r"C:\Users\dqy20\AppData\Local\Temp\gc_live_test.png"
+GAME_EXE = os.path.join(os.path.expanduser("~"), "steam", "steamapps", "common", "SlayTheSpire", "SlayTheSpire.exe")
+SHOT = os.path.join(os.environ.get("TEMP", os.path.expanduser("~")), "gc_live_test.png")
 KEEP = "--keep" in sys.argv
 
 user32 = ctypes.windll.user32

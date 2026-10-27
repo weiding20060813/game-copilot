@@ -19,13 +19,16 @@ import json
 import os
 import time
 
+_HOME = os.path.expanduser("~")
+_STS = os.path.join(_HOME, "steam", "steamapps", "common", "SlayTheSpire")
+
 SAVE_ROOT_CANDIDATES = [
-    r"C:\Users\dqy20\steam\steamapps\common\SlayTheSpire\saves",
+    os.path.join(_STS, "saves"),
     os.path.join(os.environ.get("APPDATA", ""), "SlayTheSpire"),
     os.path.join(os.environ.get("LOCALAPPDATA", ""), "SlayTheSpire"),
 ]
 RUN_ROOT_CANDIDATES = [
-    r"C:\Users\dqy20\steam\steamapps\common\SlayTheSpire\runs",
+    os.path.join(_STS, "runs"),
     os.path.join(os.environ.get("APPDATA", ""), "SlayTheSpire", "runs"),
 ]
 

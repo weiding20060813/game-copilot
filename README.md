@@ -1,4 +1,4 @@
-﻿# AI 游戏陪玩（屏幕共享 + 悬浮对话框）
+# AI 游戏陪玩（屏幕共享 + 悬浮对话框）
 
 实时看你的屏幕 → 用视觉模型读画面 → 在置顶悬浮窗里跟你聊怎么打。
 首个适配游戏：**《杀戮尖塔》Slay the Spire**（回合制，最吃“看图给建议”这个场景）。
@@ -12,7 +12,7 @@
 也可以命令行：
 
 ```powershell
-cd C:\Users\dqy20\Desktop\dsh工作区\休闲\game-copilot
+cd <本仓库所在目录>
 python main.py
 ```
 
@@ -24,7 +24,7 @@ python main.py
 1. 环境变量 `DEEPSEEK_API_KEY`
 2. 本目录下的 `apikey.txt`（一行 key）
 3. `config.py` 里的 `API["api_key"]`
-4. `C:\Users\dqy20\.dsh\.credentials.yaml`（DSH 登录凭据，当前生效的就是这个）
+4. `%USERPROFILE%\.dsh\.credentials.yaml`（DSH 登录凭据，本机已登录时生效）
 
 ---
 
