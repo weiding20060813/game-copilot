@@ -1,0 +1,22 @@
+# 密钥与个人数据
+apikey.txt
+deck.txt
+*.key
+
+# 运行产物
+copilot.log
+*.log
+_selftest_shot.jpg
+selftest_*.jpg
+*.jpg
+*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 系统垃圾
+Thumbs.db
+desktop.ini
+.DS_Store
